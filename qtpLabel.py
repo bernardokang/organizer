@@ -66,7 +66,7 @@ kv = 100
 #칼라마스터
 #라피드리그 튜토리얼
 #논리학
-lg = 50
+lg = 53.33
 #읽기
 #소셜스터디
 #중국어
@@ -74,7 +74,7 @@ lg = 50
 #소요리
 #보컬
 #sqldb
-sql = 0
+sql = 6.45
 
 #기계학습인공지능
 ai = 2
@@ -574,7 +574,7 @@ class Ui_MainWindow(object):
         self.pushButton_7.setText(_translate("MainWindow", "Push"))
         self.label_8.setText(_translate("MainWindow", "왕초보 maya % 진행 중!!"))
         self.pushButton_8.setText(_translate("MainWindow", "Push"))
-        self.label_9.setText(_translate("MainWindow", "db사용 sql"))
+        self.label_9.setText(_translate("MainWindow", "db사용 sql"+str(sql)+"% 스웩"))
         self.pushButton_9.setText(_translate("MainWindow", "Push"))
         self.label_10.setText(_translate("MainWindow", "인공지능 및 기계학습1"))
         self.pushButton_10.setText(_translate("MainWindow", "Push"))
