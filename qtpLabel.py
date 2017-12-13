@@ -21,6 +21,9 @@ import sys
 
 #init Number
 
+#파이썬마야
+mp = 22
+
 #애프터이펙트
 ae = 281
 
@@ -79,24 +82,24 @@ ai = 2
 
 
 #글로벌 기능
-def showYourState():
-    f = open('db/pythonmayadb.py', 'r')
-    db = f.readlines()
-    lena =len(db)
-    return lena
+# def showYourState():
+#     f = open('db/pythonmayadb.py', 'r')
+#     db = f.readlines()
+#     lena =len(db)
+#     return lena
 
 
-
-x = (showYourState()/pythonmaya)*100
-y = "%.2f" % x
+#
+# x = (showYourState()/pythonmaya)*100
+# y = "%.2f" % x
 
 # 버튼을 누를 때 일어나는 일들
-class Clickevent():
-    def updateDB(self):
-        f = open('db/pythonmayadb.py', 'a')
-        comment = input("덴버, 코멘트를 입력할 수 있어")
-        data = comment+"\n"
-        f.write(data)
+# class Clickevent():
+#     def updateDB(self):
+#         f = open('db/pythonmayadb.py', 'a')
+#         comment = input("덴버, 코멘트를 입력할 수 있어")
+#         data = comment+"\n"
+#         f.write(data)
 
 
 
@@ -130,7 +133,7 @@ class Ui_MainWindow(object):
         #maya python버튼이용
         self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar.setGeometry(QtCore.QRect(40, 66, 191, 23))
-        self.progressBar.setProperty("value", x)
+        self.progressBar.setProperty("value", mp)
         self.progressBar.setObjectName("progressBar")
 
 
@@ -145,7 +148,7 @@ class Ui_MainWindow(object):
 
 
         #엮는다
-        self.pushButton.clicked.connect(Clickevent.updateDB)
+        # self.pushButton.clicked.connect(Clickevent.updateDB)
         #이 부분 클릭이벤트클라쓰랑 해서 바꿀필요가 있
 
 
@@ -555,7 +558,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "*----palette progress bar v1.0 ----*"))
-        self.label_2.setText(_translate("MainWindow", "python maya "+str(y)+"% 진행중!!"))
+        self.label_2.setText(_translate("MainWindow", "python maya "+str(mp)+"% 진행중!!"))
         self.pushButton.setText(_translate("MainWindow", "Push"))
         self.label.setText(_translate("MainWindow", "*- project44 VFX Label -*"))
         self.label_3.setText(_translate("MainWindow", "HUD %진행 중!!"))
