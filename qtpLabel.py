@@ -55,7 +55,7 @@ hd = 1
 #rigging 101
 rgg = 23.51
 #왕초보메뉴강의
-cb = 12.5
+cb = 15.15
 #파이썬깐깐해
 #자바스크립트
 js = 0
@@ -131,7 +131,7 @@ ai = 2
 
 
 class Ui_MainWindow(object):
-    def updateTable(*args):
+    def updateTable(*args): #악스는 진짜 신의 한수구나
         #self.pushButton_7했는데 셀프가 낫디파인드 문제가 생겼었음, 이것은 인스턴스의 문제다 고로,, 인스턴스를 제대로 써준다
         if ui.pushButton_7.clicked:
             global cb
