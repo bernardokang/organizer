@@ -55,6 +55,7 @@ hd = 1
 #rigging 101
 rgg = 23.51
 #왕초보메뉴강의
+cb = 12.5
 #파이썬깐깐해
 #자바스크립트
 js = 0
@@ -104,6 +105,12 @@ ai = 2
 #         f.write(data)
 
 
+#버튼을 누를 때 일어나는 일들 2017.12.15업뎃slot
+# class buttonClicked():
+
+
+
+
 
 
 # 엮는다 시그널조합
@@ -124,6 +131,15 @@ ai = 2
 
 
 class Ui_MainWindow(object):
+    def updateTable(*args):
+        #self.pushButton_7했는데 셀프가 낫디파인드 문제가 생겼었음, 이것은 인스턴스의 문제다 고로,, 인스턴스를 제대로 써준다
+        if ui.pushButton_7.clicked:
+            global cb
+            cb += 20
+            #왜 이렇게 해도 안되는걸까, 근데 글로발 키워드라도 쓸 수 있게 됐네
+
+
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1057, 745)
@@ -152,6 +168,7 @@ class Ui_MainWindow(object):
         #엮는다
         # self.pushButton.clicked.connect(Clickevent.updateDB)
         #이 부분 클릭이벤트클라쓰랑 해서 바꿀필요가 있
+
 
 
 
@@ -212,12 +229,16 @@ class Ui_MainWindow(object):
         self.pushButton_7 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_7.setGeometry(QtCore.QRect(34, 412, 60, 32))
         self.pushButton_7.setObjectName("pushButton_7")
+        #버튼 7번과 엮기 슬랏시그널
+        self.pushButton_7.clicked.connect(self.updateTable)
+
+
         self.label_8 = QtWidgets.QLabel(self.centralwidget)
         self.label_8.setGeometry(QtCore.QRect(100, 418, 160, 16))
         self.label_8.setObjectName("label_8")
         self.progressBar_7 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_7.setGeometry(QtCore.QRect(40, 394, 191, 23))
-        self.progressBar_7.setProperty("value", 24)
+        self.progressBar_7.setProperty("value", cb)
         self.progressBar_7.setObjectName("progressBar_7")
         self.pushButton_8 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_8.setGeometry(QtCore.QRect(33, 465, 60, 32))
@@ -574,13 +595,13 @@ class Ui_MainWindow(object):
         self.pushButton_6.setText(_translate("MainWindow", "Push"))
         self.label_7.setText(_translate("MainWindow", "rigging"+str(rgg)+"% 수료증"))
         self.pushButton_7.setText(_translate("MainWindow", "Push"))
-        self.label_8.setText(_translate("MainWindow", "왕초보 maya % 진행 중!!"))
+        self.label_8.setText(_translate("MainWindow", "왕초보 maya" +str(cb)+"%"))
         self.pushButton_8.setText(_translate("MainWindow", "Push"))
         self.label_9.setText(_translate("MainWindow", "db사용 sql"+str(sql)+"% 스웩"))
         self.pushButton_9.setText(_translate("MainWindow", "Push"))
         self.label_10.setText(_translate("MainWindow", "인공지능 및 기계학습1"))
         self.pushButton_10.setText(_translate("MainWindow", "Push"))
-        self.label_11.setText(_translate("MainWindow", "오늘은 노력했다(불린+1):주단위 초기화"))
+        self.label_11.setText(_translate("MainWindow", "빛, 생명, 색체 -KAIST"))
         self.label_12.setText(_translate("MainWindow", "*- project44 TD Label -*"))
         self.pushButton_11.setText(_translate("MainWindow", "Push"))
         self.label_13.setText(_translate("MainWindow", "c/c++ 두들낙서 % 진행 중!!"))
@@ -629,7 +650,7 @@ class Ui_MainWindow(object):
         self.label_37.setText(_translate("MainWindow", ""))
         self.label_38.setText(_translate("MainWindow", ""))
         self.label_39.setText(_translate("MainWindow", "짧고 몇 강의 안됨!!"))
-        self.label_40.setText(_translate("MainWindow", "조져 그냥"))
+        self.label_40.setText(_translate("MainWindow", ""))
         self.label_41.setText(_translate("MainWindow", "DB써그냥 -최성철교수"))
         self.label_42.setText(_translate("MainWindow", ""))
         self.label_43.setText(_translate("MainWindow", ""))
@@ -656,7 +677,7 @@ class Ui_MainWindow(object):
 
 
 if __name__ == "__main__":
-    import sys
+
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
