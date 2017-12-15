@@ -55,13 +55,14 @@ hd = 1
 #rigging 101
 rgg = 23.51
 #왕초보메뉴강의
-cb = 18.18
+cb = 24.24
 #파이썬깐깐해
 #자바스크립트
 js = 0
 #장고걸스
 djg = 21.67
 #두들낙서
+dd= 7.04
 #영상최적화(이건 계산없이 직접 써줌)
 kv = 100
 #자료구조
@@ -82,7 +83,12 @@ sql = 17.74
 #기계학습인공지능
 ai = 2
 
+#빛생명색체
+lt=7
 
+
+#이쁜iOS
+os =0
 
 #글로벌 기능
 # def showYourState():
@@ -268,7 +274,7 @@ class Ui_MainWindow(object):
         self.label_11.setObjectName("label_11")
         self.progressBar_10 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_10.setGeometry(QtCore.QRect(39, 548, 191, 23))
-        self.progressBar_10.setProperty("value", 0)
+        self.progressBar_10.setProperty("value", lt)
         self.progressBar_10.setObjectName("progressBar_10")
         self.label_12 = QtWidgets.QLabel(self.centralwidget)
         self.label_12.setGeometry(QtCore.QRect(360, 42, 160, 16))
@@ -295,7 +301,7 @@ class Ui_MainWindow(object):
         self.label_15.setObjectName("label_15")
         self.progressBar_13 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_13.setGeometry(QtCore.QRect(360, 222, 191, 23))
-        self.progressBar_13.setProperty("value", 0)
+        self.progressBar_13.setProperty("value", dd)
         self.progressBar_13.setObjectName("progressBar_13")
         self.pushButton_12 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_12.setGeometry(QtCore.QRect(354, 510, 60, 32))
@@ -327,7 +333,7 @@ class Ui_MainWindow(object):
         self.progressBar_14.setObjectName("progressBar_14")
         self.progressBar_15 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_15.setGeometry(QtCore.QRect(360, 552, 191, 23))
-        self.progressBar_15.setProperty("value", 24)
+        self.progressBar_15.setProperty("value", os)
         self.progressBar_15.setObjectName("progressBar_15")
         self.progressBar_16 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_16.setGeometry(QtCore.QRect(360, 342, 191, 23))
@@ -605,7 +611,7 @@ class Ui_MainWindow(object):
         self.label_12.setText(_translate("MainWindow", "*- project44 TD Label -*"))
         self.pushButton_11.setText(_translate("MainWindow", "Push"))
         self.label_13.setText(_translate("MainWindow", "c/c++ 두들낙서 % 진행 중!!"))
-        self.label_14.setText(_translate("MainWindow", "rapid rig tut % 진행 중!!"))
+        self.label_14.setText(_translate("MainWindow", "iOS11,swift4 "+str(os)+"%"))
         self.label_15.setText(_translate("MainWindow", "django "+str(djg)+"% 수료증"))
         self.pushButton_12.setText(_translate("MainWindow", "Push"))
         self.label_16.setText(_translate("MainWindow", "python hard way %진행 중!!"))
@@ -617,7 +623,7 @@ class Ui_MainWindow(object):
         self.pushButton_15.setText(_translate("MainWindow", "Push"))
         self.pushButton_16.setText(_translate("MainWindow", "Push"))
         self.label_20.setText(_translate("MainWindow", "칼라 마스터 % 진행 중!!"))
-        self.label_21.setText(_translate("MainWindow", "애플 스크립트 % 진행 중!!"))
+        self.label_21.setText(_translate("MainWindow", "appleScript"))
         self.pushButton_17.setText(_translate("MainWindow", "Push"))
         self.pushButton_18.setText(_translate("MainWindow", "Push"))
         self.pushButton_19.setText(_translate("MainWindow", "Push"))
@@ -653,17 +659,17 @@ class Ui_MainWindow(object):
         self.label_40.setText(_translate("MainWindow", ""))
         self.label_41.setText(_translate("MainWindow", "DB써그냥 -최성철교수"))
         self.label_42.setText(_translate("MainWindow", ""))
-        self.label_43.setText(_translate("MainWindow", ""))
+        self.label_43.setText(_translate("MainWindow", str(lt)+"%"))
         self.label_44.setText(_translate("MainWindow", ""))
         self.label_45.setText(_translate("MainWindow", ""))
         self.label_46.setText(_translate("MainWindow", ""))
-        self.label_47.setText(_translate("MainWindow", ""))
+        self.label_47.setText(_translate("MainWindow", str(dd)+"%"))
         self.label_48.setText(_translate("MainWindow", "KAIST 최적화기법 수료"))
         self.label_49.setText(_translate("MainWindow", ""))
         self.label_50.setText(_translate("MainWindow", ""))
         self.label_51.setText(_translate("MainWindow", ""))
         self.label_52.setText(_translate("MainWindow", ""))
-        self.label_53.setText(_translate("MainWindow", ""))
+        self.label_53.setText(_translate("MainWindow", str(os)+" %"))
         self.label_54.setText(_translate("MainWindow", ""))
         self.label_55.setText(_translate("MainWindow", ""))
         self.label_56.setText(_translate("MainWindow", "maximum flow"))
