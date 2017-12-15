@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'qtpLabel.ui'
 #
 # Created by: PyQt5 UI code generator 5.9
-# Designed by: Project44
+# Designed by: Project44, open PyCharm by folder; not by file;
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -55,12 +55,12 @@ hd = 1
 #rigging 101
 rgg = 23.51
 #왕초보메뉴강의
-cb = 15.15
+cb = 18.18
 #파이썬깐깐해
 #자바스크립트
 js = 0
 #장고걸스
-djg = 16.67
+djg = 21.67
 #두들낙서
 #영상최적화(이건 계산없이 직접 써줌)
 kv = 100
