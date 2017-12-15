@@ -126,7 +126,20 @@ os =0
 
 
 
+#스타일시트
+COMPLETED_STYLE = """
+QProgressBar{
+    border: 2px dotted moccasin;
+    border-radius: 5px;
+    text-align: center
+}
 
+QProgressBar::chunk {
+    background-color: lightpink;
+    width: 1px;
+    margin: 1px;
+}
+"""
 
 
 
@@ -156,6 +169,10 @@ class Ui_MainWindow(object):
 
         #maya python버튼이용
         self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
+        self.progressBar.setStyleSheet(COMPLETED_STYLE)
+
+        #self.progressBar.setStyleSheet :: 원칙에 충실해. 스탯과 메쏘드를 가진다는 원칙이지!
+
         self.progressBar.setGeometry(QtCore.QRect(40, 66, 191, 23))
         self.progressBar.setProperty("value", mp)
         self.progressBar.setObjectName("progressBar")
@@ -178,7 +195,7 @@ class Ui_MainWindow(object):
 
 
 
-
+###여긴 레이아웃
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(40, 46, 160, 16))
         self.label.setObjectName("label")
@@ -333,7 +350,7 @@ class Ui_MainWindow(object):
         self.progressBar_14.setObjectName("progressBar_14")
         self.progressBar_15 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_15.setGeometry(QtCore.QRect(360, 552, 191, 23))
-        self.progressBar_15.setProperty("value", os)
+        self.progressBar_15.setProperty("value", 100)
         self.progressBar_15.setObjectName("progressBar_15")
         self.progressBar_16 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_16.setGeometry(QtCore.QRect(360, 342, 191, 23))
@@ -341,7 +358,7 @@ class Ui_MainWindow(object):
         self.progressBar_16.setObjectName("progressBar_16")
         self.progressBar_17 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_17.setGeometry(QtCore.QRect(360, 282, 191, 23))
-        self.progressBar_17.setProperty("value", kv)
+        self.progressBar_17.setProperty("value", os)
         self.progressBar_17.setObjectName("progressBar_17")
         self.pushButton_16 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_16.setGeometry(QtCore.QRect(354, 410, 60, 32))
@@ -581,8 +598,47 @@ class Ui_MainWindow(object):
         self.menuBar.setObjectName("menuBar")
         MainWindow.setMenuBar(self.menuBar)
 
+
+
+        #인스턴스를 만들기도 전에 스타일시트를 먹이면 에러가 난다구! 인스턴스가 없다구 그런단말이야!
+        self.progressBar_2.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_3.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_4.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_5.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_6.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_7.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_8.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_9.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_10.setStyleSheet(COMPLETED_STYLE)
+
+        self.progressBar_11.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_12.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_13.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_14.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_15.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_16.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_17.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_18.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_19.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_20.setStyleSheet(COMPLETED_STYLE)
+
+        self.progressBar_21.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_22.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_23.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_24.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_25.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_26.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_27.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_28.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_29.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_30.setStyleSheet(COMPLETED_STYLE)
+
+
+
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+#여기까지 레이아웃
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -590,18 +646,18 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "python maya "+str(mp)+"% 수료증"))
         self.pushButton.setText(_translate("MainWindow", "Push"))
         self.label.setText(_translate("MainWindow", "*- project44 VFX Label -*"))
-        self.label_3.setText(_translate("MainWindow", "HUD %진행 중!!"))
+        self.label_3.setText(_translate("MainWindow", "HUD"))
         self.pushButton_2.setText(_translate("MainWindow", "Push"))
         self.pushButton_3.setText(_translate("MainWindow", "Push"))
-        self.label_4.setText(_translate("MainWindow", "After Effect % 진행 중!!"))
+        self.label_4.setText(_translate("MainWindow", "After Effect의 대가"))
         self.pushButton_4.setText(_translate("MainWindow", "Push"))
-        self.label_5.setText(_translate("MainWindow", "Houdini % 진행 중!!"))
+        self.label_5.setText(_translate("MainWindow", "Houdini 눈오는날 만들기"))
         self.pushButton_5.setText(_translate("MainWindow", "Push"))
-        self.label_6.setText(_translate("MainWindow", "maya남국 % 진행 중!!"))
+        self.label_6.setText(_translate("MainWindow", "마야실강 복습"))
         self.pushButton_6.setText(_translate("MainWindow", "Push"))
         self.label_7.setText(_translate("MainWindow", "rigging"+str(rgg)+"% 수료증"))
         self.pushButton_7.setText(_translate("MainWindow", "Push"))
-        self.label_8.setText(_translate("MainWindow", "왕초보 maya" +str(cb)+"%"))
+        self.label_8.setText(_translate("MainWindow", "maya메뉴" +str(cb)+"%"))
         self.pushButton_8.setText(_translate("MainWindow", "Push"))
         self.label_9.setText(_translate("MainWindow", "db사용 sql"+str(sql)+"% 스웩"))
         self.pushButton_9.setText(_translate("MainWindow", "Push"))
@@ -610,46 +666,46 @@ class Ui_MainWindow(object):
         self.label_11.setText(_translate("MainWindow", "빛, 생명, 색체 -KAIST"))
         self.label_12.setText(_translate("MainWindow", "*- project44 TD Label -*"))
         self.pushButton_11.setText(_translate("MainWindow", "Push"))
-        self.label_13.setText(_translate("MainWindow", "c/c++ 두들낙서 % 진행 중!!"))
-        self.label_14.setText(_translate("MainWindow", "iOS11,swift4 "+str(os)+"%"))
+        self.label_13.setText(_translate("MainWindow", "c/c++동시에 두들낙서"))
+        self.label_14.setText(_translate("MainWindow", "카이스트 영상최적화기법"))
         self.label_15.setText(_translate("MainWindow", "django "+str(djg)+"% 수료증"))
         self.pushButton_12.setText(_translate("MainWindow", "Push"))
-        self.label_16.setText(_translate("MainWindow", "python hard way %진행 중!!"))
-        self.label_17.setText(_translate("MainWindow", "kaist 자료구조"+str(ds)+"% 진행 중!!"))
-        self.label_18.setText(_translate("MainWindow", "아놀드렌더러 % 진행 중!!"))
+        self.label_16.setText(_translate("MainWindow", "깐깐하게 배우는 파이썬"))
+        self.label_17.setText(_translate("MainWindow", "kaist 자료구조"+str(ds)+"%"))
+        self.label_18.setText(_translate("MainWindow", "아놀드렌더러"))
         self.pushButton_13.setText(_translate("MainWindow", "Push"))
         self.pushButton_14.setText(_translate("MainWindow", "Push"))
-        self.label_19.setText(_translate("MainWindow", "javasript JS % 진행 중!!"))
+        self.label_19.setText(_translate("MainWindow", "javasript 생활코딩"))
         self.pushButton_15.setText(_translate("MainWindow", "Push"))
         self.pushButton_16.setText(_translate("MainWindow", "Push"))
-        self.label_20.setText(_translate("MainWindow", "칼라 마스터 % 진행 중!!"))
+        self.label_20.setText(_translate("MainWindow", "empty"))
         self.label_21.setText(_translate("MainWindow", "appleScript"))
         self.pushButton_17.setText(_translate("MainWindow", "Push"))
         self.pushButton_18.setText(_translate("MainWindow", "Push"))
-        self.pushButton_19.setText(_translate("MainWindow", "Push"))
-        self.pushButton_20.setText(_translate("MainWindow", "Mster"))
-        self.label_22.setText(_translate("MainWindow", "영상최적화기법 Master"))
+        self.pushButton_19.setText(_translate("MainWindow", "완료"))
+        self.pushButton_20.setText(_translate("MainWindow", "Push"))
+        self.label_22.setText(_translate("MainWindow", "iOS11, swift4 "+str(os)+"%"))
         self.pushButton_21.setText(_translate("MainWindow", "Push"))
         self.label_23.setText(_translate("MainWindow", "*- project44 Main Label -*"))
         self.label_24.setText(_translate("MainWindow", "보컬% (boolean타입+1)"))
         self.pushButton_22.setText(_translate("MainWindow", "Push"))
-        self.label_25.setText(_translate("MainWindow", "중국어 % 진행 중!!"))
+        self.label_25.setText(_translate("MainWindow", "중국어"))
         self.pushButton_23.setText(_translate("MainWindow", "Push"))
-        self.label_26.setText(_translate("MainWindow", "project grilgirl % 진행 중!!(인풋타입)"))
-        self.label_27.setText(_translate("MainWindow", "쏙청/쏙캔/쏙킹 boolean타입+1 진행 중!!"))
+        self.label_26.setText(_translate("MainWindow", "project grilgirl"))
+        self.label_27.setText(_translate("MainWindow", "쏙청/쏙캔/쏙킹"))
         self.pushButton_24.setText(_translate("MainWindow", "Push"))
-        self.label_28.setText(_translate("MainWindow", "이태리어 % 진행 중!!"))
-        self.label_29.setText(_translate("MainWindow", "논리학"+str(lg)+"% 진행 중!!"))
+        self.label_28.setText(_translate("MainWindow", "이탈리아어"))
+        self.label_29.setText(_translate("MainWindow", "논리학"+str(lg)+"%"))
         self.pushButton_25.setText(_translate("MainWindow", "Push"))
-        self.label_30.setText(_translate("MainWindow", "social+, male+ % 진행 중!!"))
+        self.label_30.setText(_translate("MainWindow", "social+, male+"))
         self.pushButton_26.setText(_translate("MainWindow", "Push"))
         self.pushButton_27.setText(_translate("MainWindow", "Push"))
         self.pushButton_28.setText(_translate("MainWindow", "Push"))
-        self.label_31.setText(_translate("MainWindow", "읽기: 신문 등 boolean타입(+1씩)"))
+        self.label_31.setText(_translate("MainWindow", "읽기"))
         self.pushButton_29.setText(_translate("MainWindow", "Push"))
-        self.label_32.setText(_translate("MainWindow", "프랑스어 % 진행 중!!"))
+        self.label_32.setText(_translate("MainWindow", "프랑스어"))
         self.pushButton_30.setText(_translate("MainWindow", "Push"))
-        self.label_33.setText(_translate("MainWindow", "소요리 % 진행 중!!"))
+        self.label_33.setText(_translate("MainWindow", "소요리 하"))
         self.label_34.setText(_translate("MainWindow", "maximum flow"))
         self.label_35.setText(_translate("MainWindow", ""))
         self.label_36.setText(_translate("MainWindow", ""))
@@ -664,22 +720,22 @@ class Ui_MainWindow(object):
         self.label_45.setText(_translate("MainWindow", ""))
         self.label_46.setText(_translate("MainWindow", ""))
         self.label_47.setText(_translate("MainWindow", str(dd)+"%"))
-        self.label_48.setText(_translate("MainWindow", "KAIST 최적화기법 수료"))
+        self.label_48.setText(_translate("MainWindow", ""))
         self.label_49.setText(_translate("MainWindow", ""))
         self.label_50.setText(_translate("MainWindow", ""))
         self.label_51.setText(_translate("MainWindow", ""))
         self.label_52.setText(_translate("MainWindow", ""))
-        self.label_53.setText(_translate("MainWindow", str(os)+" %"))
+        self.label_53.setText(_translate("MainWindow", ""))
         self.label_54.setText(_translate("MainWindow", ""))
         self.label_55.setText(_translate("MainWindow", ""))
         self.label_56.setText(_translate("MainWindow", "maximum flow"))
         self.label_57.setText(_translate("MainWindow", ""))
-        self.label_58.setText(_translate("MainWindow", "하든 안하든 시간은 간다"))
+        self.label_58.setText(_translate("MainWindow", ""))
         self.label_59.setText(_translate("MainWindow", ""))
         self.label_60.setText(_translate("MainWindow", ""))
         self.label_61.setText(_translate("MainWindow", ""))
         self.label_62.setText(_translate("MainWindow", ""))
-        self.label_63.setText(_translate("MainWindow", "자기관리의 시작"))
+        self.label_63.setText(_translate("MainWindow", ""))
 
 
 if __name__ == "__main__":
