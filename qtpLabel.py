@@ -237,7 +237,7 @@ class Ui_MainWindow(object):
         self.label_6.setObjectName("label_6")
         self.progressBar_5 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_5.setGeometry(QtCore.QRect(40, 283, 191, 23))
-        self.progressBar_5.setProperty("value", 24)
+        self.progressBar_5.setProperty("value", 0)
         self.progressBar_5.setObjectName("progressBar_5")
         self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_6.setGeometry(QtCore.QRect(34, 360, 60, 32))
