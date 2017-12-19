@@ -57,6 +57,7 @@ rgg = 23.51
 #왕초보메뉴강의
 cb = 39.39
 #파이썬깐깐해
+tg = 0
 #자바스크립트
 js = 0
 #장고걸스
@@ -70,7 +71,7 @@ ds = 20
 #칼라마스터
 #라피드리그 튜토리얼
 #논리학
-lg = 80
+lg = 96.67
 #읽기
 #소셜스터디
 #중국어
@@ -78,7 +79,7 @@ lg = 80
 #소요리
 #보컬
 #sqldb
-sql = 25.81
+sql = 37.10
 
 #기계학습인공지능
 ai = 2
@@ -86,9 +87,14 @@ ai = 2
 #빛생명색체
 lt= 100
 
+#RUBY&PYTHON
+pr = 19.46
 
 #이쁜iOS
 os =0
+
+#쏙청
+ec=90.10
 
 #글로벌 기능
 # def showYourState():
@@ -298,7 +304,7 @@ class Ui_MainWindow(object):
         self.label_12.setObjectName("label_12")
         self.progressBar_11 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_11.setGeometry(QtCore.QRect(360, 62, 191, 23))
-        self.progressBar_11.setProperty("value", 10)
+        self.progressBar_11.setProperty("value", tg)
         self.progressBar_11.setObjectName("progressBar_11")
         self.pushButton_11 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_11.setGeometry(QtCore.QRect(354, 132, 60, 32))
@@ -346,7 +352,7 @@ class Ui_MainWindow(object):
         self.pushButton_15.setObjectName("pushButton_15")
         self.progressBar_14 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_14.setGeometry(QtCore.QRect(360, 442, 191, 23))
-        self.progressBar_14.setProperty("value", 0)
+        self.progressBar_14.setProperty("value", pr)
         self.progressBar_14.setObjectName("progressBar_14")
         self.progressBar_15 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_15.setGeometry(QtCore.QRect(360, 552, 191, 23))
@@ -398,7 +404,7 @@ class Ui_MainWindow(object):
         self.label_22.setObjectName("label_22")
         self.progressBar_21 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_21.setGeometry(QtCore.QRect(690, 282, 191, 23))
-        self.progressBar_21.setProperty("value", 1)
+        self.progressBar_21.setProperty("value", ec)
         self.progressBar_21.setObjectName("progressBar_21")
         self.pushButton_21 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_21.setGeometry(QtCore.QRect(684, 240, 60, 32))
@@ -670,15 +676,15 @@ class Ui_MainWindow(object):
         self.label_14.setText(_translate("MainWindow", "카이스트 영상최적화기법"))
         self.label_15.setText(_translate("MainWindow", "django "+str(djg)+"% 수료증"))
         self.pushButton_12.setText(_translate("MainWindow", "Push"))
-        self.label_16.setText(_translate("MainWindow", "깐깐하게 배우는 파이썬"))
+        self.label_16.setText(_translate("MainWindow", "팀랩파이썬, 참고:깐깐파이썬"))
         self.label_17.setText(_translate("MainWindow", "kaist 자료구조"+str(ds)+"%"))
-        self.label_18.setText(_translate("MainWindow", "아놀드렌더러"))
+        self.label_18.setText(_translate("MainWindow", "Arnold"))
         self.pushButton_13.setText(_translate("MainWindow", "Push"))
         self.pushButton_14.setText(_translate("MainWindow", "Push"))
         self.label_19.setText(_translate("MainWindow", "javasript 생활코딩"))
         self.pushButton_15.setText(_translate("MainWindow", "Push"))
         self.pushButton_16.setText(_translate("MainWindow", "Push"))
-        self.label_20.setText(_translate("MainWindow", "empty"))
+        self.label_20.setText(_translate("MainWindow", "Python&Ruby 생활코딩113"))
         self.label_21.setText(_translate("MainWindow", "appleScript"))
         self.pushButton_17.setText(_translate("MainWindow", "Push"))
         self.pushButton_18.setText(_translate("MainWindow", "Push"))
@@ -692,7 +698,7 @@ class Ui_MainWindow(object):
         self.label_25.setText(_translate("MainWindow", "중국어"))
         self.pushButton_23.setText(_translate("MainWindow", "Push"))
         self.label_26.setText(_translate("MainWindow", "project grilgirl"))
-        self.label_27.setText(_translate("MainWindow", "쏙청/쏙캔/쏙킹"))
+        self.label_27.setText(_translate("MainWindow", "쏙청 마무리"))
         self.pushButton_24.setText(_translate("MainWindow", "Push"))
         self.label_28.setText(_translate("MainWindow", "이탈리아어"))
         self.label_29.setText(_translate("MainWindow", "논리학"+str(lg)+"%"))
@@ -701,7 +707,7 @@ class Ui_MainWindow(object):
         self.pushButton_26.setText(_translate("MainWindow", "Push"))
         self.pushButton_27.setText(_translate("MainWindow", "Push"))
         self.pushButton_28.setText(_translate("MainWindow", "Push"))
-        self.label_31.setText(_translate("MainWindow", "읽기"))
+        self.label_31.setText(_translate("MainWindow", "게임 이론 - KAIST"))
         self.pushButton_29.setText(_translate("MainWindow", "Push"))
         self.label_32.setText(_translate("MainWindow", "프랑스어"))
         self.pushButton_30.setText(_translate("MainWindow", "Push"))
