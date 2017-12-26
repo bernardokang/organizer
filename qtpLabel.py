@@ -59,7 +59,7 @@ cb = 53.125
 #파이썬깐깐해
 tg = 0
 #자바스크립트
-js = 0
+js = 63.72
 #장고걸스
 djg = 26.67
 #두들낙서
@@ -79,7 +79,7 @@ lg = 96.67
 #소요리
 #보컬
 #sqldb
-sql = 37.10
+sql = 51.61
 
 #기계학습인공지능
 ai = 2
@@ -147,12 +147,19 @@ QProgressBar::chunk {
 }
 """
 
+COMPLETED_STYLE2 = """
+QProgressBar{
+    border: 2px dotted white;
+    border-radius: 5px;
+    text-align: center
+}
 
-
-
-
-
-
+QProgressBar::chunk {
+    background-color: skyblue;
+    width: 1px;
+    margin: 1px;
+}
+"""
 
 
 class Ui_MainWindow(object):
@@ -615,13 +622,13 @@ class Ui_MainWindow(object):
         self.progressBar_7.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_8.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_9.setStyleSheet(COMPLETED_STYLE)
-        self.progressBar_10.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_10.setStyleSheet(COMPLETED_STYLE2)
 
         self.progressBar_11.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_12.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_13.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_14.setStyleSheet(COMPLETED_STYLE)
-        self.progressBar_15.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_15.setStyleSheet(COMPLETED_STYLE2)
         self.progressBar_16.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_17.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_18.setStyleSheet(COMPLETED_STYLE)
