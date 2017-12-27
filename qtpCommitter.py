@@ -8,8 +8,36 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
+
+
+
+
+
 class Ui_MainWindow(object):
+
+
+    ###버튼엮기 슬롯 ::recursion;;;
+    def download(self):
+
+        if self.pushButton_13.clicked:
+            print('btn clicked!')
+            self.completed = 0
+            self.a = self.completed+15
+            print(self.a)
+            return self.a
+
+
+
+        # return self.a
+
+
+
+
+
+
     def setupUi(self, MainWindow):
+
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(522, 416)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -55,7 +83,8 @@ class Ui_MainWindow(object):
 "    width: 14px;\n"
 "    margin: 1px;\n"
 "}")
-        self.progressBar.setProperty("value", 100)
+        # self.progressBar.setProperty("value", 0)
+        self.progressBar.setValue(self.download())
         self.progressBar.setTextVisible(False)
         self.progressBar.setObjectName("progressBar")
         self.pushButton_15 = QtWidgets.QPushButton(self.centralwidget)
@@ -243,8 +272,20 @@ class Ui_MainWindow(object):
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
+
+
+
+
+
+
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+        self.pushButton_13.clicked.connect(self.download)
+
+
+
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
