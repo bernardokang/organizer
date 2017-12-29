@@ -620,7 +620,7 @@ class Ui_MainWindow(object):
         self.progressBar_5.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_6.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_7.setStyleSheet(COMPLETED_STYLE)
-        self.progressBar_8.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_8.setStyleSheet(COMPLETED_STYLE2)
         self.progressBar_9.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_10.setStyleSheet(COMPLETED_STYLE2)
 
