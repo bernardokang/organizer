@@ -55,7 +55,7 @@ hd = 1
 #rigging 101
 rgg = 23.51
 #왕초보메뉴강의
-cb = 53.125
+cb = 54.54
 #파이썬깐깐해
 tg = 0
 #자바스크립트
@@ -81,8 +81,8 @@ lg = 96.67
 #sqldb
 sql = 100
 
-#기계학습인공지능
-ai = 2
+#마리
+ai = 43.75
 
 #빛생명색체
 lt= 100
@@ -674,7 +674,7 @@ class Ui_MainWindow(object):
         self.pushButton_8.setText(_translate("MainWindow", "Push"))
         self.label_9.setText(_translate("MainWindow", "db사용sql + MySQL"))
         self.pushButton_9.setText(_translate("MainWindow", "Push"))
-        self.label_10.setText(_translate("MainWindow", "인공지능 및 기계학습1"))
+        self.label_10.setText(_translate("MainWindow", "MARI multiple UV"))
         self.pushButton_10.setText(_translate("MainWindow", "Push"))
         self.label_11.setText(_translate("MainWindow", "빛, 생명, 색체 -KAIST"))
         self.label_12.setText(_translate("MainWindow", "*- project44 TD Label -*"))
