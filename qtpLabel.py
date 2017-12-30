@@ -672,7 +672,7 @@ class Ui_MainWindow(object):
         self.pushButton_7.setText(_translate("MainWindow", "Push"))
         self.label_8.setText(_translate("MainWindow", "maya메뉴" +str(cb)+"%"))
         self.pushButton_8.setText(_translate("MainWindow", "Push"))
-        self.label_9.setText(_translate("MainWindow", "db사용 sql"+str(sql)+"% 스웩"))
+        self.label_9.setText(_translate("MainWindow", "db사용sql + MySQL"))
         self.pushButton_9.setText(_translate("MainWindow", "Push"))
         self.label_10.setText(_translate("MainWindow", "인공지능 및 기계학습1"))
         self.pushButton_10.setText(_translate("MainWindow", "Push"))
