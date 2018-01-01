@@ -71,7 +71,7 @@ ds = 20
 #칼라마스터
 #라피드리그 튜토리얼
 #논리학
-lg = 96.67
+lg = 100
 #읽기
 #소셜스터디
 #중국어
@@ -638,7 +638,7 @@ class Ui_MainWindow(object):
         self.progressBar_21.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_22.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_23.setStyleSheet(COMPLETED_STYLE)
-        self.progressBar_24.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_24.setStyleSheet(COMPLETED_STYLE2)
         self.progressBar_25.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_26.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_27.setStyleSheet(COMPLETED_STYLE)
