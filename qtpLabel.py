@@ -82,7 +82,7 @@ lg = 96.67
 sql = 100
 
 #마리
-ai = 75
+ai = 100
 
 #빛생명색체
 lt= 100
@@ -621,7 +621,7 @@ class Ui_MainWindow(object):
         self.progressBar_6.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_7.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_8.setStyleSheet(COMPLETED_STYLE2)
-        self.progressBar_9.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_9.setStyleSheet(COMPLETED_STYLE2)
         self.progressBar_10.setStyleSheet(COMPLETED_STYLE2)
 
         self.progressBar_11.setStyleSheet(COMPLETED_STYLE)
