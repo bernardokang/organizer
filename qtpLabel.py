@@ -82,7 +82,7 @@ lg = 96.67
 sql = 100
 
 #마리
-ai = 43.75
+ai = 62.5
 
 #빛생명색체
 lt= 100
@@ -685,7 +685,7 @@ class Ui_MainWindow(object):
         self.pushButton_12.setText(_translate("MainWindow", "Push"))
         self.label_16.setText(_translate("MainWindow", "팀랩파이썬, 참고:깐깐파이썬"))
         self.label_17.setText(_translate("MainWindow", "kaist 자료구조"+str(ds)+"%"))
-        self.label_18.setText(_translate("MainWindow", "Arnold"))
+        self.label_18.setText(_translate("MainWindow", "Arnold Renderer"))
         self.pushButton_13.setText(_translate("MainWindow", "Push"))
         self.pushButton_14.setText(_translate("MainWindow", "Push"))
         self.label_19.setText(_translate("MainWindow", "javasript 생활코딩"))
