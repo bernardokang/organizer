@@ -59,7 +59,7 @@ cb = 78.78
 #파이썬깐깐해
 tg = 0
 #자바스크립트
-js = 82.35
+js = 87.25
 #장고걸스
 djg = 26.67
 #두들낙서
@@ -659,14 +659,14 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "python maya "+str(mp)+"% 수료증"))
         self.pushButton.setText(_translate("MainWindow", "Push"))
         self.label.setText(_translate("MainWindow", "*- project44 VFX Label -*"))
-        self.label_3.setText(_translate("MainWindow", "HUD"))
+        self.label_3.setText(_translate("MainWindow", "Adobe illustrator+HUD"))
         self.pushButton_2.setText(_translate("MainWindow", "Push"))
         self.pushButton_3.setText(_translate("MainWindow", "Push"))
         self.label_4.setText(_translate("MainWindow", "After Effect의 대가"))
         self.pushButton_4.setText(_translate("MainWindow", "Push"))
         self.label_5.setText(_translate("MainWindow", "Houdini 눈오는날 만들기"))
         self.pushButton_5.setText(_translate("MainWindow", "Push"))
-        self.label_6.setText(_translate("MainWindow", "마야실강 복습"))
+        self.label_6.setText(_translate("MainWindow", "html/css/js/vue.js"))
         self.pushButton_6.setText(_translate("MainWindow", "Push"))
         self.label_7.setText(_translate("MainWindow", "rigging"+str(rgg)+"% 수료증"))
         self.pushButton_7.setText(_translate("MainWindow", "Push"))
