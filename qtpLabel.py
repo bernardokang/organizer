@@ -87,8 +87,8 @@ ai = 100
 #빛생명색체
 lt= 100
 
-#RUBY&PYTHON
-pr = 25.4
+#RUBY&PYTHON&PAYNE&기타등등
+pr = 30.95
 
 #이쁜iOS
 os =0
