@@ -17,7 +17,7 @@ from PyQt5.QtWidgets import QHBoxLayout
 import sys
 
 
-
+temp = 56.82
 
 #init Number
 
@@ -311,7 +311,7 @@ class Ui_MainWindow(object):
         self.label_12.setObjectName("label_12")
         self.progressBar_11 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_11.setGeometry(QtCore.QRect(360, 62, 191, 23))
-        self.progressBar_11.setProperty("value", tg)
+        self.progressBar_11.setProperty("value", temp)
         self.progressBar_11.setObjectName("progressBar_11")
         self.pushButton_11 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_11.setGeometry(QtCore.QRect(354, 132, 60, 32))
@@ -683,7 +683,7 @@ class Ui_MainWindow(object):
         self.label_14.setText(_translate("MainWindow", "카이스트 영상최적화기법: 코드1회분"))
         self.label_15.setText(_translate("MainWindow", "html/css/js/vue.js"))
         self.pushButton_12.setText(_translate("MainWindow", "Push"))
-        self.label_16.setText(_translate("MainWindow", "empty"))
+        self.label_16.setText(_translate("MainWindow", "간이 테이블"))
         self.label_17.setText(_translate("MainWindow", "kaist 자료구조"+str(ds)+"%"))
         self.label_18.setText(_translate("MainWindow", "django "+str(djg)+"% 수료증"))
         self.pushButton_13.setText(_translate("MainWindow", "Push"))
