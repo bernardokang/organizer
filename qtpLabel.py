@@ -88,7 +88,7 @@ ai = 100
 lt= 100
 
 #RUBY&PYTHON&PAYNE&기타등등
-pr = 33.86
+pr = 39.37
 
 #이쁜iOS
 os =0
