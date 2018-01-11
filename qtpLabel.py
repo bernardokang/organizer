@@ -17,7 +17,7 @@ from PyQt5.QtWidgets import QHBoxLayout
 import sys
 
 
-temp = 56.82
+temp = 100
 
 #init Number
 
@@ -88,7 +88,7 @@ ai = 100
 lt= 100
 
 #RUBY&PYTHON&PAYNE&기타등등
-pr = 39.37
+pr = 41.73
 
 #이쁜iOS
 os =0
@@ -624,7 +624,7 @@ class Ui_MainWindow(object):
         self.progressBar_9.setStyleSheet(COMPLETED_STYLE2)
         self.progressBar_10.setStyleSheet(COMPLETED_STYLE2)
 
-        self.progressBar_11.setStyleSheet(COMPLETED_STYLE)
+        self.progressBar_11.setStyleSheet(COMPLETED_STYLE2)
         self.progressBar_12.setStyleSheet(COMPLETED_STYLE2)
         self.progressBar_13.setStyleSheet(COMPLETED_STYLE)
         self.progressBar_14.setStyleSheet(COMPLETED_STYLE)
@@ -683,7 +683,7 @@ class Ui_MainWindow(object):
         self.label_14.setText(_translate("MainWindow", "카이스트 영상최적화기법: 코드1회분"))
         self.label_15.setText(_translate("MainWindow", "html/css/js/vue.js"))
         self.pushButton_12.setText(_translate("MainWindow", "Push"))
-        self.label_16.setText(_translate("MainWindow", "간이 테이블"))
+        self.label_16.setText(_translate("MainWindow", "html 생활코딩"))
         self.label_17.setText(_translate("MainWindow", "kaist 자료구조"+str(ds)+"%"))
         self.label_18.setText(_translate("MainWindow", "django "+str(djg)+"% 수료증"))
         self.pushButton_13.setText(_translate("MainWindow", "Push"))
