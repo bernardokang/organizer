@@ -681,7 +681,7 @@ class Ui_MainWindow(object):
         self.pushButton_11.setText(_translate("MainWindow", "Push"))
         self.label_13.setText(_translate("MainWindow", "iOS11,swift4:Angela"))
         self.label_14.setText(_translate("MainWindow", "카이스트 영상최적화기법: 코드1회분"))
-        self.label_15.setText(_translate("MainWindow", "html/css/js/vue.js"))
+        self.label_15.setText(_translate("MainWindow", "css 스타일시트 생활코딩"))
         self.pushButton_12.setText(_translate("MainWindow", "Push"))
         self.label_16.setText(_translate("MainWindow", "html 생활코딩"))
         self.label_17.setText(_translate("MainWindow", "kaist 자료구조"+str(ds)+"%"))
