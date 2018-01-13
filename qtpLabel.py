@@ -60,6 +60,8 @@ cb = 100
 tg = 0
 #자바스크립트
 js = 100
+#css
+css = 30.61
 #장고걸스
 djg = 26.67
 #두들낙서
@@ -398,7 +400,7 @@ class Ui_MainWindow(object):
         self.pushButton_18.setObjectName("pushButton_18")
         self.progressBar_20 = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar_20.setGeometry(QtCore.QRect(360, 168, 191, 23))
-        self.progressBar_20.setProperty("value", 0)
+        self.progressBar_20.setProperty("value", css)
         self.progressBar_20.setObjectName("progressBar_20")
         self.pushButton_19 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_19.setGeometry(QtCore.QRect(354, 570, 60, 32))
