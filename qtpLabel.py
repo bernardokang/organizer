@@ -53,7 +53,7 @@ hd = 1
 
 #남국실강
 #rigging 101
-rgg = 30
+rgg = 53
 #왕초보메뉴강의
 cb = 100
 #파이썬깐깐해
@@ -90,7 +90,7 @@ ai = 100
 lt= 100
 
 #RUBY&PYTHON&PAYNE&기타등등
-pr = 43.75
+pr = 46.88
 
 #이쁜iOS
 os =0
