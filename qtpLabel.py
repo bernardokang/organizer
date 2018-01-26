@@ -22,7 +22,7 @@ temp = 100
 #init Number
 
 #파이썬마야
-mp = 47
+mp = 67
 
 #애프터이펙트
 ae = 281
@@ -45,15 +45,13 @@ grilgirl =300
 #HUD
 hud = 25
 
-#마야파이썬
-pythonmaya = 51
 
 #후디니
 hd = 1
 
 #남국실강
 #rigging 101
-rgg = 70.58
+rgg = 80
 #왕초보메뉴강의
 cb = 100
 #파이썬깐깐해
@@ -61,7 +59,7 @@ tg = 0
 #자바스크립트
 js = 100
 #css
-css = 53.06
+css = 67.35
 #장고걸스
 djg = 26.67
 #두들낙서
@@ -90,7 +88,7 @@ ai = 100
 lt= 100
 
 #RUBY&PYTHON&PAYNE&기타등등
-pr = 50.76
+pr = 57.89
 
 #이쁜iOS
 os =0
